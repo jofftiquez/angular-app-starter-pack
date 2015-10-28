@@ -13,7 +13,7 @@ angular.module('services', [])
 .service('azureCDN', function(){
     return {
         getURL : function(){
-            return "https://d1ujtdmo5j6yit.cloudfront.net/images/";
+            return "some url";
         }
     }
 })
@@ -24,18 +24,18 @@ angular.module('services', [])
         getPersons : function(){
         	var persons = [
         		{
-        			name : "joff",
+        			name : "green",
         			age : "22",
         			gender : "M"
         		},
         		{
-        			name : "erick",
+        			name : "foxx",
         			age : "23",
         			gender : "M"
         		},
         		{
-        			name : "geo",
-        			age : "2?",
+        			name : "john",
+        			age : "25",
         			gender : "M"
         		}
         	];
