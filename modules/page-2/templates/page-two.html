@@ -2,27 +2,8 @@
 <section>
 	<div class="container">
 		<div class="row">
-			<h1 align="center">Page Two</h1>
-
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<table class="table table-hover">
-					<th colspan="4">Persons table - <b>ng-repeat and ng-click sample</b></th>
-					<!-- on ng-click you can either pass the person object or
-					person objects value. eg. person.name -->
-					<!-- ng-click will call the function from the corresponding 
-					controller declaired for this template -->
-					<tr ng-repeat="person in persons" 
-						ng-click="alertPersonInfo(person)"
-						data-toggle="tooltip" 
-						data-placement="bottom" 
-						title="Click {{ person.name }}">
-						<td><b>{{ $index+1 }}</b></td>
-						<td>{{ person.name }}</td>
-						<td>{{ person.age }}</td>
-						<td>{{ person.gender }}</td>
-					</tr>
-				</table>
-			</div>
+			<h1 align="center">Page Two (important angularjs components demo)</h1>
+			<br>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<form class="form">
 					<div class="form-group">
@@ -41,9 +22,26 @@
 				    	</button>
 				    </div>
 				</form>  	
-<pre>
-{{ newperson }}
-</pre>
+				<pre>{{ newperson }}</pre>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<table class="table table-hover">
+					<th colspan="4">Persons table - <b>ng-repeat and ng-click sample</b> <i>(Click on the rows)</i></th>
+					<!-- on ng-click you can either pass the person object or
+					person objects value. eg. person.name -->
+					<!-- ng-click will call the function from the corresponding 
+					controller declaired for this template -->
+					<tr ng-repeat="person in persons" 
+						ng-click="alertPersonInfo(person)"
+						data-toggle="tooltip" 
+						data-placement="bottom" 
+						title="Click {{ person.name }}">
+						<td><b>{{ $index+1 }}</b></td>
+						<td>{{ person.name }}</td>
+						<td>{{ person.age }}</td>
+						<td>{{ person.gender }}</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>
