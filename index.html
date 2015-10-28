@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="mojobwebadmin">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+	<title>Mojob - Web Admin</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="description" content="Mojob Web Admin">
+  	<meta name="twitter:card" content="summary_large_image" />
+  	<meta name="author" content="Team O.P.S. Inc.">
+
+  	<!-- Foreign Scripts -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Self Scripts -->
+	<script src="modules/page-0/controllers/page-zero-controller.js"></script>
+	<script src="modules/page-1/controllers/page-one-controller.js"></script>
+	<script src="modules/page-2/controllers/page-two-controller.js"></script>
+	<script src="scripts/services.js"></script>
+	<script src="app.js"></script>
+
+	<!-- Styles -->
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="app.css" rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<section ui-view></section>
+</body>
+</html>

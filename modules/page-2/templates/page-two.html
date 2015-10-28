@@ -1,0 +1,50 @@
+<ng-include src="'navbar.html'"></ng-include>
+<section>
+	<div class="container">
+		<div class="row">
+			<h1 align="center">Page Two</h1>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<table class="table table-hover">
+					<th colspan="4">Persons table - <b>ng-repeat and ng-click sample</b></th>
+					<!-- on ng-click you can either pass the person object or
+					person objects value. eg. person.name -->
+					<!-- ng-click will call the function from the corresponding 
+					controller declaired for this template -->
+					<tr ng-repeat="person in persons" 
+						ng-click="alertPersonInfo(person)"
+						data-toggle="tooltip" 
+						data-placement="bottom" 
+						title="Click {{ person.name }}">
+						<td><b>{{ $index+1 }}</b></td>
+						<td>{{ person.name }}</td>
+						<td>{{ person.age }}</td>
+						<td>{{ person.gender }}</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<form class="form">
+					<div class="form-group">
+				    	<label for="exampleInputEmail1">Two way binding sample</label>
+				    	<input ng-model="newperson.name" type="text" class="form-control"  placeholder="Name">
+				    </div>
+				    <div class="form-group">
+				    	<input ng-model="newperson.age" type="number" class="form-control" min="0" max="120"  placeholder="Age">
+				    </div>
+				    <div class="form-group">
+				    	<input ng-model="newperson.gender" type="text" class="form-control"  placeholder="Gender">
+				    </div>
+				    <div class="form-group">
+				    	<button class="btn btn-primary" ng-click="addToPersons()" >
+				    		Add to Table
+				    	</button>
+				    </div>
+				</form>  	
+<pre>
+{{ newperson }}
+</pre>
+			</div>
+		</div>
+	</div>
+</section>

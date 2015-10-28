@@ -1,0 +1,20 @@
+{
+  "name": "angular-fox-seed",
+  "version": "0.0.0",
+  "authors": [
+    "Green Fox <jofftiquez@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5"
+  }
+}
