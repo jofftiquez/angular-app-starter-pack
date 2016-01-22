@@ -1,23 +1,4 @@
-'use strict';
-
-angular.module('page-2', ['ui.router'])
-
-.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
-    function($stateProvider, $urlRouterProvider, $locationProvider) {
-
-    $stateProvider
-        .state('page-2', {
-            url: '/page-2',
-            templateUrl: 'modules/page-2/templates/page-two.html',
-            controller:'page2Controller'
-        })
-
-}])
-
-/*inject other services in this 
-controller on in other controller
-that requires thos service.*/
-.controller('page2Controller',
+mojobwebadmin.controller('page2Controller',
 	['$scope', 'getRequestService', 'postRequestService',
     function($scope, getRequestService, postRequestService){
 
