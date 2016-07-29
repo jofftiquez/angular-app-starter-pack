@@ -1,8 +1,8 @@
 {
-  "name": "angular-fox-seed",
+  "name": "angular-app-starter-pack",
   "version": "0.0.0",
   "authors": [
-    "Green Fox <jofftiquez@gmail.com>"
+    "Jofferson Ramirez Tiquez <jofftiquez@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [

@@ -1,15 +1,26 @@
 app.controller('page0Controller',
-	['$scope',
-    function($scope){
+	['$scope', 'getRequestService', 'postRequestService',
+    function($scope, getRequestService, postRequestService){
 
-}])
+    // to be used on view see /page-2
+    $scope.persons = getRequestService.getPersons();
+    $scope.newperson = {};
 
-.controller('sampleCtrl',
-	['$scope', 'NAME',
-    function($scope, NAME){
+    $scope.alertPersonInfo = function(e){
+    	var x = "{ name : "+ e.name +" } \n { age : "+ e.age +"} \n { gender : "+ e.gender +" }";
+    	alert(x);
+    }
 
-    // NAME was the resolved var from URL injected in this controller
+    $scope.addToPersons = function(){
+    	$scope.persons.push($scope.newperson);
 
-    var nameFromUrlParams = NAME;
+    	// postRequestService.addPersonSample($scope.newperson)
+    	// 	.then(function(response){ // promise from service post is resolved
+    	// 		// do something
+    	// 	}, function(error){ // promise rejected
+    	// 		// handle error
+    	// 	})
 
+    	$scope.newperson = {};
+    }
 }])

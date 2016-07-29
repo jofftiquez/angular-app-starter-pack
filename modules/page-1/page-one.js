@@ -2,8 +2,14 @@ app.controller('page1Controller',
 	['$scope',
     function($scope){
 
-
-
 }])
 
-// Tip : You can also add multiple controllers on single controller file
+.controller('sampleCtrl',
+	['$scope', 'NAME',
+    function($scope, NAME){
+
+    // NAME was the resolved var from URL injected in this controller
+
+    var nameFromUrlParams = NAME;
+
+}])

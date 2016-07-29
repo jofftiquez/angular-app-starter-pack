@@ -1,6 +1,10 @@
 # angular-app-starter-pack
 
-Starting project guide for AngularJs, includes ui-router and bootstrap.
+Starting project guide for AngularJs, includes `ui-router` and `bootstrap`.
+
+**Demo**
+
+[angular-app-starter-pack](http://angular-app-starter-pack.herokuapp.com/)
 
 ## Installation
 
