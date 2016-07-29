@@ -1,4 +1,4 @@
-mojobwebadmin.controller('page0Controller',
+app.controller('page0Controller',
 	['$scope',
     function($scope){
 
@@ -13,4 +13,3 @@ mojobwebadmin.controller('page0Controller',
     var nameFromUrlParams = NAME;
 
 }])
-

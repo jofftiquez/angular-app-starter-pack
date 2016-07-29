@@ -1,6 +1,6 @@
 'use strict';
 
-var mojobwebadmin = angular.module('mojobwebadmin', [
+var app = angular.module('app', [
 	'ui.router',
 	'services',
 ]).config(['$stateProvider', '$locationProvider', '$httpProvider', '$urlRouterProvider',
@@ -12,10 +12,10 @@ var mojobwebadmin = angular.module('mojobwebadmin', [
     $stateProvider
         .state('page-0', {
             url: '/',
-            templateUrl: 'modules/page-0/templates/page-zero.html',
+            templateUrl: 'modules/page-0/page-zero.html',
             controller:'page0Controller'
         })
-
+        // Sample state
         .state('sample', {
             url: '/sample/:name',
             templateUrl: 'some/path/to/temlate',
@@ -31,13 +31,13 @@ var mojobwebadmin = angular.module('mojobwebadmin', [
 
         .state('page-1', { // state name usage : <a ui-sref="page-1">Will go to page 1</a>
             url: '/page-1', // will appear on url bar
-            templateUrl: 'modules/page-1/templates/page-one.html', // url template
+            templateUrl: 'modules/page-1/page-one.html', // url template
             controller:'page1Controller' // controller
         })
 
         .state('page-2', {
             url: '/page-2',
-            templateUrl: 'modules/page-2/templates/page-two.html',
+            templateUrl: 'modules/page-2/page-two.html',
             controller:'page2Controller'
         })
 

@@ -1,4 +1,4 @@
-mojobwebadmin.controller('page1Controller',
+app.controller('page1Controller',
 	['$scope',
     function($scope){
 

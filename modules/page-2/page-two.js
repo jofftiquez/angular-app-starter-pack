@@ -1,4 +1,4 @@
-mojobwebadmin.controller('page2Controller',
+app.controller('page2Controller',
 	['$scope', 'getRequestService', 'postRequestService',
     function($scope, getRequestService, postRequestService){
 
