@@ -19,3 +19,4 @@ To make your development much easier you can use task runners and/or modulers li
 
 - [Boostrap Material Design](http://fezvrasta.github.io/bootstrap-material-design/) implementation.
 - Deployment to Heroku guide and sample with Nodejs x Express as backend server.
+- More angularjs samples.
