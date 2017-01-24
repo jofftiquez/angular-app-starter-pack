@@ -2,6 +2,8 @@
 
 Starting project guide for AngularJs, includes `ui-router` and `bootstrap`.
 
+For a simpler setup, you can also see [simple-angular-webpack](https://github.com/jofftiquez/simple-angular-webpack)
+
 **Demo**
 
 [angular-app-starter-pack](http://angular-app-starter-pack.herokuapp.com/)
